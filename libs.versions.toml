@@ -1,0 +1,8 @@
+[versions]
+springBoot = "2.5.3"
+
+[libraries]
+springBootStarter = { group = "org.springframework.boot", name = "spring-boot-starter", version.ref = "springBoot" }
+
+[plugins]
+springBoot = { id = "org.springframework.boot", version.ref = "springBoot" }
