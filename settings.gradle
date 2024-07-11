@@ -1,5 +1,5 @@
 rootProject.name = 'multi-module'
-include 'service', 'core', 'generate'
+include 'service', 'core', 'generate', 'application'
 
 dependencyResolutionManagement {
     versionCatalogs {
@@ -8,3 +8,4 @@ dependencyResolutionManagement {
         }
     }
 }
+

@@ -4,12 +4,14 @@ plugins {
 }
 
 group = 'nl.multicode'
+version = '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
+    implementation(libs.bundles.springBootBundle)
     testImplementation(libs.bundles.testBundle)
 }
 

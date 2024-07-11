@@ -1,8 +1,17 @@
 [versions]
 springBoot = "2.5.3"
+junitJupiter = "5.7.2"
 
 [libraries]
 springBootStarter = { group = "org.springframework.boot", name = "spring-boot-starter", version.ref = "springBoot" }
+springBootStarterWeb = { group = "org.springframework.boot", name = "spring-boot-starter-web", version.ref = "springBoot" }
+springBootStarterTest = { group = "org.springframework.boot", name = "spring-boot-starter-test", version.ref = "springBoot" }
+junitJupiterApi = { group = "org.junit.jupiter", name = "junit-jupiter-api", version.ref = "junitJupiter" }
+junitJupiterEngine = { group = "org.junit.jupiter", name = "junit-jupiter-engine", version.ref = "junitJupiter" }
+
+[bundles]
+springBootBundle = ["springBootStarter", "springBootStarterWeb"]
+testBundle = ["junitJupiterApi", "junitJupiterEngine", "springBootStarterTest"]
 
 [plugins]
 springBoot = { id = "org.springframework.boot", version.ref = "springBoot" }
